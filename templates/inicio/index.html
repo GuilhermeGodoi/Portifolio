@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>Guilherme Godoi</h1>
+          </div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <center>
+          <p>Hey! I am Guilherme, a daring programmer from Brazil and I seek to combine what I learned in technical education and what I am learning in college to create innovative codes.</p>
+          <br><br>
+          <p>This website is interely made with Django, HTML and CSS</p>
+        </center>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <a href="https://github.com/GuilhermeGodoi/TumorDetectionAPP">
+              <img id="tccimg" src="{% static 'assets/tcc.png' %}" alt="Project 1">
+              <h3>Tumor Detection</h3>
+              <p>Final Paper at Technical College.<br>ComputerVision, Artificial Inteligence, Python and more.</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/GuilhermeGodoi/AutomacaoWebPythonWhatsapp">
+            <img id="automacaoimg" src="{% static 'assets/python.png'%}" alt="Project 2">
+            <h3>Web Automation</h3>
+            <p>Whatsapp Web automation to change theme and send messages.<br>Selenium, Python.</p>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/GuilhermeGodoi/NLP_Chatbot">
+            <img id="chatbotimg" src="{% static 'assets/chatbot.png'%}" alt="Project 3">
+            <h3>Chatbot</h3>
+            <p>Natural Language Processing Chatbot that sell some cool things. Python, Keras, NLTK and more.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <form action="#">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2023 Guilherme Godoi Barreiros</p>
+  </footer>
+</body>
+</html>
