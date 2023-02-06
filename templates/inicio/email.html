@@ -1,0 +1,15 @@
+{% extends 'inicio/base.html'%}
+{% load static %}
+{% block content%}
+<center>
+    <br><br><br>
+    <h1>SUBMITED</h1>
+    <br><br><br>
+    <form action="{% url 'index' %}">
+        <button>home</button>
+        <br><br><br>
+    </form>
+
+    <img src="{% static 'assets/thumbsup.gif' %}">
+</center>
+{% endblock %}
