@@ -13,7 +13,7 @@ Prerequisites: Python, Git, Virtualenv
 `venv/Scripts/activate` (Windows)
 
 3. Install requirements <br>
-`pip intall -r requirements.txt`
+`pip install -r requirements.txt`
 
 ### Running
 `python manage.py runserver`
